@@ -81,8 +81,8 @@
   loop
   on:canplay={handleCanPlay}>
   <source
-    src="/assets/videos/channel-{$currentChannelInfo.displayName}.webm"
-    type="video/webm" />
+    src="/assets/videos/channel-{$currentChannelInfo.displayName}.mp4"
+    type="video/mp4" />
   <source
     src="/assets/videos/channel-{$currentChannelInfo.displayName}.mp4"
     type="video/mp4" />

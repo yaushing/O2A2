@@ -229,7 +229,7 @@
           <div class="control onoff">
             <button class="hide-text" on:click={() => toggleSpace(false)}>REMOTE
               OFF</button>
-            <span>SPACE OFF</span>
+            <span>Turn off</span>
           </div>
 
           <div class="control vol up">
@@ -279,7 +279,7 @@
             alt="kiwivision"
             width="103"
             height="10" />
-          <br />
+          <br/>
           <span>COMPUTER SPACE COMMAND</span>
         </div>
       </div>

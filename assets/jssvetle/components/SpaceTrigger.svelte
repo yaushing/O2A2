@@ -36,4 +36,4 @@
   }
 </style>
 
-<button class="cursor-pointer" on:click={toggleSpace}>SPACE MODE</button>
+<button class="cursor-pointer" on:click={toggleSpace}>TR</button>
