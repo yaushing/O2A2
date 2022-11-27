@@ -12,3 +12,8 @@
 
 **Version 0.7.777 (Beta Stage 1)**
 *Photography photos now load independantly. Also, added the 13 random facts about me! removed channel 9*
+
+**Version 0.8.502 (Beta Stage 2)**
+*Fixed channel 9 load, Space mode's shortcur now is K. Added Machine Learning Project. Formatted **ALL** Pages. Added Language skills. Also, Changed remote words. Reformatted most pages. Rewrote resume. Fixed Panelbear so @Kaisermann doesn't get too many headaches. Added me.jpg*
+
+**Note - add comments on code before release + channel 3, 9 vids**

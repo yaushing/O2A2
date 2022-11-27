@@ -1,90 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <meta charset="utf-8" />
-  <meta name="description" content="Coding for humans. Come say hi 🌳" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="description" content="Coding for humans. Come say hi 🌳" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-site-verification" content="-AeO98ZKBiyBlJ-1-XKUIaKp1tCLlz6zydEQ-X7P1m8" />
+    <meta property="og:site_name" content="KYS | websites" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="article:author" content="https://yaushing.github.io/O2A2" />
+    <!-- from https://github.com/djpogo/avif-webp-css-support/ -->
+    <style>
+      .flex1 {
+        display: flex;
+        background-color: None;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
 
-  <meta
-    name="google-site-verification"
-    content="-AeO98ZKBiyBlJ-1-XKUIaKp1tCLlz6zydEQ-X7P1m8"
-  />
-  
-  <meta property="og:site_name" content="KYS | websites" />
-  <meta property="og:locale" content="en_US" />
-  <meta property="article:author" content="https://yaushing.github.io/O2A2" />
+      .flex1>div {
+        background-color: None;
+        margin: 10px;
+        padding: 20px;
+        font-size: 30px;
+      }
 
+      .flexvpics {
+        display: flex;
+        background-color: Nonw;
+        flex-direction: row;
+      }
 
-  <!-- from https://github.com/djpogo/avif-webp-css-support/ -->
-  <style>
-  .flex1 {
-    display: flex;
-    background-color: None;
-    flex-direction:row;
-    flex-wrap: wrap;
-  }
+      .flexvpics>div {
+        background-color: None;
+        margin: 10px;
+        padding: 20px;
+        font-size: 30px;
+      }
 
-  .flex1 > div {
-    background-color: None;
-    margin: 10px;
-    padding: 20px;
-    font-size: 30px;
-  }
+      .vpic {
+        height: 27vh;
+        border: 5px;
+        border-style: solid;
+        border-color: white;
+      }
 
-  .flexvpics {
-    display: flex;
-    background-color: Nonw;
-    flex-direction:row;
-  }
+      .hpic {
+        height: 27vh;
+        border: 5px;
+        border-style: solid;
+        border-color: white;
+      }
+    </style>
+    </style>
+    <script>
+      ! function(A) {
+        "use strict";
 
-  .flexvpics > div{
-    background-color: None;
-    margin: 10px;
-    padding: 20px;
-    font-size: 30px;
-  }
-  
-  .vpic {
-    height: 27vh;
-    border:5px;
-    border-style:solid;
-    border-color:white;
-  }
+        function e(A, e, n) {
+          const o = function(A) {
+            return window.sessionStorage ? JSON.parse(window.sessionStorage.getItem(A + "Support")) : null
+          }(A);
+          if (null === o) {
+            const t = new Image;
+            return t.onload = t.onerror = function() {
+              n(A, 2 === t.height)
+            }, void(t.src = e)
+          }
+          t(A, o)
+        }
 
-  .hpic {
-    height: 27vh;
-    border:5px;
-    border-style:solid;
-    border-color:white;
-  }
-</style>
-  </style>
-<script>
-  
-
-  !function(A){"use strict";function e(A,e,n){const o=function(A){return window.sessionStorage?JSON.parse(window.sessionStorage.getItem(A+"Support")):null}(A);if(null===o){const t=new Image;return t.onload=t.onerror=function(){n(A,2===t.height)},void(t.src=e)}t(A,o)}function t(e,t){t&&A.documentElement.classList.add(e),window.sessionStorage.setItem(e+"Support",t)}e("webp","data:image/webp;base64,UklGRi4AAABXRUJQVlA4TCEAAAAvAUAAEB8wAiMwAgSSNtse/cXjxyCCmrYNWPwmHRH9jwMA",t),e("avif","data:image/avif;base64,AAAAIGZ0eXBhdmlmAAAAAGF2aWZtaWYxbWlhZk1BMUEAAADybWV0YQAAAAAAAAAoaGRscgAAAAAAAAAAcGljdAAAAAAAAAAAAAAAAGxpYmF2aWYAAAAADnBpdG0AAAAAAAEAAAAeaWxvYwAAAABEAAABAAEAAAABAAABGgAAAF0AAAAoaWluZgAAAAAAAQAAABppbmZlAgAAAAABAABhdjAxQ29sb3IAAAAAamlwcnAAAABLaXBjbwAAABRpc3BlAAAAAAAAAAIAAAACAAAAEHBpeGkAAAAAAwgICAAAAAxhdjFDgS0AAAAAABNjb2xybmNseAACAAIAAIAAAAAXaXBtYQAAAAAAAAABAAEEAQKDBAAAAGVtZGF0EgAKBzgAPtAgIAkyUBAAAPWc41TP///4gHBX9H8XVK7gGeDllq8TYARA+8Tfsv7L+zPE24eIoIzE0WhHbrqcrTK9VEgEG/hwgB5rdCbvP8g3KYPdV88CvPJnptgQ",t)}(document);
-</script>
-
-
-  <link
-    rel="preload"
-    href="/assets/fonts/VCROSDMono.woff2"
-    as="font"
-    type="font/woff2"
-    crossorigin="anonymous"
-  />
-
-  <link rel="stylesheet" href="/assets/css/main.css">
-
-  <link rel="icon" href="/assets/images/favicon.png" />
-
-  
-
-  <title>KYS        |
-  photos
-   </title>
-</head>
-
+        function t(e, t) {
+          t && A.documentElement.classList.add(e), window.sessionStorage.setItem(e + "Support", t)
+        }
+        e("webp", "data:image/webp;base64,UklGRi4AAABXRUJQVlA4TCEAAAAvAUAAEB8wAiMwAgSSNtse/cXjxyCCmrYNWPwmHRH9jwMA", t), e("avif", "data:image/avif;base64,AAAAIGZ0eXBhdmlmAAAAAGF2aWZtaWYxbWlhZk1BMUEAAADybWV0YQAAAAAAAAAoaGRscgAAAAAAAAAAcGljdAAAAAAAAAAAAAAAAGxpYmF2aWYAAAAADnBpdG0AAAAAAAEAAAAeaWxvYwAAAABEAAABAAEAAAABAAABGgAAAF0AAAAoaWluZgAAAAAAAQAAABppbmZlAgAAAAABAABhdjAxQ29sb3IAAAAAamlwcnAAAABLaXBjbwAAABRpc3BlAAAAAAAAAAIAAAACAAAAEHBpeGkAAAAAAwgICAAAAAxhdjFDgS0AAAAAABNjb2xybmNseAACAAIAAIAAAAAXaXBtYQAAAAAAAAABAAEEAQKDBAAAAGVtZGF0EgAKBzgAPtAgIAkyUBAAAPWc41TP///4gHBX9H8XVK7gGeDllq8TYARA+8Tfsv7L+zPE24eIoIzE0WhHbrqcrTK9VEgEG/hwgB5rdCbvP8g3KYPdV88CvPJnptgQ", t)
+      }(document);
+    </script>
+    <link rel="preload" href="/assets/fonts/VCROSDMono.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="icon" href="/assets/images/favicon.png" />
+    <title>KYS | photos </title>
+  </head>
   <body class="cursor-default">
     <div class="space">
       <div class="stars"></div>
@@ -102,138 +97,114 @@
               <a class="skip-link" href="#content">Skip to content</a>
               <div class="page-container glitchy-text">
                 <header class="header">
-  <div class="header__container">
-    <nav class="nav" js-slot="nav">
-       
-      <ul class="nav__breadcrumb">
-        <li>
-          <a href="index.html">YSK</a>
-        </li>
-        <li
-          class="js-text-nav text-nav cursor-pointer"
-          contenteditable
-          role="textbox"
-          aria-label="navigation by text"
-          data-original-text="photos"
-        >
-          photos
-        </li>
-      </ul>
-      
-    </nav>
-
-    <div class="header__info">
-      <div class="js-header-date">JUL 2, 1993</div>
-      <div class="js-header-controls"></div>
-      <noscript>
-        <div role="button">CHANNEL 00</div>
-      </noscript>
-    </div>
-  </div>
-</header>
-<div class="page-content" id="content" js-slot="content">
-  <div class="flex1" style="display: flex; background-color: None; flex-direction:row; flex-wrap: wrap;">
-    <div class="flexvpics" style="display: flex; background-color: None; flex-direction:row; margin: 10px; padding: 20px;">
-      <img src="assets/cpics/vpic/2.jpeg" alt:"pic 1" class="vpic" style="height: 27vh; border:5px; border-style:solid; border-color:white;" style="height: 27vh; border:5px; border-style:solid; border-color:white;"/>
-      <img src="assets/cpics/vpic/3.jpeg" alt:"pic 1" class="vpic" style="height: 27vh; border:5px; border-style:solid; border-color:white;"/>
-    </div>
-  <div style="margin: 10px; padding: 20px;">
-    <img src="assets/cpics/hpic/1.jpeg" alt:"pic 1" class="hpic" style="height: 27vh; border:5px; border-style:solid; border-color:white;"/>
-  </div>
-  <div style="margin: 10px; padding: 20px;">
-    <img src="assets/cpics/hpic/2.jpeg" alt:"pic 1" class="hpic" style="height: 27vh; border:5px; border-style:solid; border-color:white;"/>
-  </div>
-  <div style="margin: 10px; padding: 20px;">
-    <img src="assets/cpics/hpic/3.jpeg" alt:"pic 1" class="hpic" style="height: 27vh; border:5px; border-style:solid; border-color:white;"/>
-  </div>
-  <div class="flexvpics" style="display: flex; background-color: None; flex-direction:row; margin: 10px; padding: 20px;">
-      <img src="assets/cpics/vpic/4.jpeg" alt:"pic 1" class="vpic" style="height: 27vh; border:5px; border-style:solid; border-color:white;"/>
-      <img src="assets/cpics/vpic/6.jpeg" alt:"pic 1" class="vpic" style="height: 27vh; border:5px; border-style:solid; border-color:white;"/>
-    </div>
-  <div style="margin: 10px; padding: 20px;">
-    <img src="assets/cpics/hpic/4.jpeg" alt:"pic 1" class="hpic" style="height: 27vh; border:5px; border-style:solid; border-color:white;"/>
-  </div>
-  <div style="margin: 10px; padding: 20px;">
-    <img src="assets/cpics/hpic/4.jpeg" alt:"pic 1" class="hpic" style="height: 27vh; border:5px; border-style:solid; border-color:white;"/>
-  </div>
-  <div style="margin: 10px; padding: 20px;">
-    <img src="assets/cpics/hpic/5.jpeg" alt:"pic 1" class="hpic" style="height: 27vh; border:5px; border-style:solid; border-color:white;"/>
-  </div>
-  <div class="flexvpics" style="display: flex; background-color: None; flex-direction:row; margin: 10px; padding: 20px;">
-      <img src="assets/cpics/vpic/8.jpeg" alt:"pic 1" class="vpic" style="height: 27vh; border:5px; border-style:solid; border-color:white;"/>
-      <img src="assets/cpics/vpic/1.jpeg" alt:"pic 1" class="vpic" style="height: 27vh; border:5px; border-style:solid; border-color:white;"/>
-    </div>
-  <div style="margin: 10px; padding: 20px;">
-    <img src="assets/cpics/hpic/7.jpeg" alt:"pic 1" class="hpic" style="height: 27vh; border:5px; border-style:solid; border-color:white;"/>
-  </div>
-  <div style="margin: 10px; padding: 20px;">
-    <img src="assets/cpics/hpic/8.jpeg" alt:"pic 1" class="hpic" style="height: 27vh; border:5px; border-style:solid; border-color:white;"/>
-  </div>
-  <div style="margin: 10px; padding: 20px;">
-    <img src="assets/cpics/hpic/9.jpeg" alt:"pic 1" class="hpic" style="height: 27vh; border:5px; border-style:solid; border-color:white;"/>
-  </div>
-  <div style="margin: 10px; padding: 20px;">
-    <img src="assets/cpics/hpic/10.jpeg" alt:"pic 1" class="hpic" style="height: 27vh; border:5px; border-style:solid; border-color:white;"/>
-  </div>
-  <div style="margin: 10px; padding: 20px;">
-    <img src="assets/cpics/hpic/11.jpeg" alt:"pic 1" class="hpic" style="height: 27vh; border:5px; border-style:solid; border-color:white;"/>
-  </div>
-  <div style="margin: 10px; padding: 20px;">
-    <img src="assets/cpics/hpic/12.jpeg" alt:"pic 1" class="hpic" style="height: 27vh; border:5px; border-style:solid; border-color:white;"/>
-  </div>
-  <div style="margin: 10px; padding: 20px;">
-    <img src="assets/cpics/hpic/6.jpeg" alt:"pic 1" class="hpic" style="height: 27vh; border:5px; border-style:solid; border-color:white;"/>
-  </div>
-</div>
-  </div>
-
-<footer class="footer" id="footer">
-  <ul class="link-list">
-    <li>
-      <a href="resume.html" rel="noopener noreferrer" target="_blank">RESUME</a>
-    </li>
-    <li>
-      <a
-        href="mailto:kam.yaushing@gmail.com"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        EMAIL
-      </a>
-    </li>
-
-  </ul>
-  <div class="js-space-trigger"></div>
-</footer>
-
+                  <div class="header__container">
+                    <nav class="nav" js-slot="nav">
+                      <ul class="nav__breadcrumb">
+                        <li>
+                          <a href="index.html">YSK</a>
+                        </li>
+                        <li class="js-text-nav text-nav cursor-pointer" contenteditable role="textbox" aria-label="navigation by text" data-original-text="photos"> photos </li>
+                      </ul>
+                    </nav>
+                    <div class="header__info">
+                      <div class="js-header-date">JUL 2, 1993</div>
+                      <div class="js-header-controls"></div>
+                      <noscript>
+                        <div role="button">CHANNEL 00</div>
+                      </noscript>
+                    </div>
+                  </div>
+                </header>
+                <div class="page-content" id="content" js-slot="content">
+                  <div class="flex1" style="display: flex; background-color: None; flex-direction:row; flex-wrap: wrap;">
+                    <div class="flexvpics" style="display: flex; background-color: None; flex-direction:row; margin: 10px; padding: 20px;">
+                      <img src="assets/cpics/vpic/2.jpeg" alt:"pic 1" class="vpic" style="height: 27vh; border:5px; border-style:solid; border-color:white;" style="height: 27vh; border:5px; border-style:solid; border-color:white;" />
+                      <img src="assets/cpics/vpic/3.jpeg" alt:"pic 1" class="vpic" style="height: 27vh; border:5px; border-style:solid; border-color:white;" />
+                    </div>
+                    <div style="margin: 10px; padding: 20px;">
+                      <img src="assets/cpics/hpic/1.jpeg" alt:"pic 1" class="hpic" style="height: 27vh; border:5px; border-style:solid; border-color:white;" />
+                    </div>
+                    <div style="margin: 10px; padding: 20px;">
+                      <img src="assets/cpics/hpic/2.jpeg" alt:"pic 1" class="hpic" style="height: 27vh; border:5px; border-style:solid; border-color:white;" />
+                    </div>
+                    <div style="margin: 10px; padding: 20px;">
+                      <img src="assets/cpics/hpic/3.jpeg" alt:"pic 1" class="hpic" style="height: 27vh; border:5px; border-style:solid; border-color:white;" />
+                    </div>
+                    <div class="flexvpics" style="display: flex; background-color: None; flex-direction:row; margin: 10px; padding: 20px;">
+                      <img src="assets/cpics/vpic/4.jpeg" alt:"pic 1" class="vpic" style="height: 27vh; border:5px; border-style:solid; border-color:white;" />
+                      <img src="assets/cpics/vpic/6.jpeg" alt:"pic 1" class="vpic" style="height: 27vh; border:5px; border-style:solid; border-color:white;" />
+                    </div>
+                    <div style="margin: 10px; padding: 20px;">
+                      <img src="assets/cpics/hpic/4.jpeg" alt:"pic 1" class="hpic" style="height: 27vh; border:5px; border-style:solid; border-color:white;" />
+                    </div>
+                    <div style="margin: 10px; padding: 20px;">
+                      <img src="assets/cpics/hpic/4.jpeg" alt:"pic 1" class="hpic" style="height: 27vh; border:5px; border-style:solid; border-color:white;" />
+                    </div>
+                    <div style="margin: 10px; padding: 20px;">
+                      <img src="assets/cpics/hpic/5.jpeg" alt:"pic 1" class="hpic" style="height: 27vh; border:5px; border-style:solid; border-color:white;" />
+                    </div>
+                    <div class="flexvpics" style="display: flex; background-color: None; flex-direction:row; margin: 10px; padding: 20px;">
+                      <img src="assets/cpics/vpic/6.jpeg" alt:"pic 1" class="vpic" style="height: 27vh; border:5px; border-style:solid; border-color:white;" />
+                      <img src="assets/cpics/vpic/1.jpeg" alt:"pic 1" class="vpic" style="height: 27vh; border:5px; border-style:solid; border-color:white;" />
+                    </div>
+                    <div style="margin: 10px; padding: 20px;">
+                      <img src="assets/cpics/hpic/7.jpeg" alt:"pic 1" class="hpic" style="height: 27vh; border:5px; border-style:solid; border-color:white;" />
+                    </div>
+                    <div style="margin: 10px; padding: 20px;">
+                      <img src="assets/cpics/hpic/8.jpeg" alt:"pic 1" class="hpic" style="height: 27vh; border:5px; border-style:solid; border-color:white;" />
+                    </div>
+                    <div style="margin: 10px; padding: 20px;">
+                      <img src="assets/cpics/hpic/9.jpeg" alt:"pic 1" class="hpic" style="height: 27vh; border:5px; border-style:solid; border-color:white;" />
+                    </div>
+                    <div style="margin: 10px; padding: 20px;">
+                      <img src="assets/cpics/hpic/10.jpeg" alt:"pic 1" class="hpic" style="height: 27vh; border:5px; border-style:solid; border-color:white;" />
+                    </div>
+                    <div style="margin: 10px; padding: 20px;">
+                      <img src="assets/cpics/hpic/11.jpeg" alt:"pic 1" class="hpic" style="height: 27vh; border:5px; border-style:solid; border-color:white;" />
+                    </div>
+                    <div style="margin: 10px; padding: 20px;">
+                      <img src="assets/cpics/hpic/12.jpeg" alt:"pic 1" class="hpic" style="height: 27vh; border:5px; border-style:solid; border-color:white;" />
+                    </div>
+                    <div style="margin: 10px; padding: 20px;">
+                      <img src="assets/cpics/hpic/6.jpeg" alt:"pic 1" class="hpic" style="height: 27vh; border:5px; border-style:solid; border-color:white;" />
+                    </div>
+                  </div>
+                </div>
+                <footer class="footer" id="footer">
+                  <ul class="link-list">
+                    <li>
+                      <a href="resume.html" rel="noopener noreferrer" target="_blank">RESUME</a>
+                    </li>
+                    <li>
+                      <a href="mailto:kam.yaushing@gmail.com" rel="noopener noreferrer" target="_blank"> EMAIL </a>
+                    </li>
+                  </ul>
+                  <div class="js-space-trigger"></div>
+                </footer>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
     <div class="js-remote"></div>
-
     <script>
-  
-
-  document.querySelector(".js-header-date").innerHTML=new Intl.DateTimeFormat("en-US",{month:"short",day:"numeric",year:"numeric"}).format(new Date);
-</script>
-
-<script async type="module" src="/assets/main.js"></script>
-
-    
-  <script
-    async
-    src="https://cdn.panelbear.com/analytics.js?site=LVrTyzS8YBv"
-  ></script>
-  <script>
-    
-
-    window.panelbear=window.panelbear||function(){(window.panelbear.q=window.panelbear.q||[]).push(arguments)},panelbear("config",{site:"LVrTyzS8YBv",spaMode:"history"});
-  </script>
-
-
+      document.querySelector(".js-header-date").innerHTML = new Intl.DateTimeFormat("en-US", {
+        month: "short",
+        day: "numeric",
+        year: "numeric"
+      }).format(new Date);
+    </script>
+    <script async type="module" src="/assets/main.js"></script>
+    <!-- Panelbear -->
+    <script async src="https://cdn.panelbear.com/analytics.js?site=4Tucg4KASiw"></script>
+    <script>
+      window.panelbear = window.panelbear || function() {
+        (window.panelbear.q = window.panelbear.q || []).push(arguments);
+      };
+      panelbear('config', {
+        site: '4Tucg4KASiw'
+      });
+    </script>
   </body>
 </html>
