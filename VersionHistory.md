@@ -16,4 +16,5 @@
 **Version 0.8.502 (Beta Stage 2)**
 *Fixed channel 9 load, Space mode's shortcur now is K. Added Machine Learning Project. Formatted **ALL** Pages. Added Language skills. Also, Changed remote words. Reformatted most pages. Rewrote resume. Fixed Panelbear so @Kaisermann doesn't get too many headaches. Added me.jpg*
 
-**Note - add comments on code before release + channel 3, 9 vids**
+**Version 0.8.700 (Beta Stage 3)**
+*Added channel 9 and 3 videos, Fixed remote styling, fixed me.jpg span inverted colours. Added Violin and Piano Skills in resume. Skills are now rearranged to strongest to weakest. Rephrased index.html. Added Instagram.*
