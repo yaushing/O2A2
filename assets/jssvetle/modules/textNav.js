@@ -1,11 +1,15 @@
+//Distance between the two strings
 import levenshtein from 'js-levenshtein';
 
+//Imports raf anf switch pages
 import { raf } from './utils.js';
 import { gotoPage } from './links.js';
 
+//INitialize pages + textnav
 let pages;
 let textNav;
 
+//Jumps to closest page
 function getClosestPageMatch(text) {
   const { page } = pages.reduce(
     (acc, p) => {
@@ -33,6 +37,7 @@ function getClosestPageMatch(text) {
   return page;
 }
 
+//Get pos of a caret with the element
 function getCaretPositionWithin(element) {
   let caretOffset = 0;
   const sel = window.getSelection();
@@ -49,6 +54,7 @@ function getCaretPositionWithin(element) {
   return caretOffset;
 }
 
+//updates the caret with the element
 function updateCaret() {
   if (textNav == null) return;
 
@@ -57,6 +63,7 @@ function updateCaret() {
   textNav.style.setProperty('--caret-position', pos);
 }
 
+//Changes page using textNavigation
 function changePage() {
   const page = getClosestPageMatch(textNav.textContent.trim());
 
@@ -69,6 +76,7 @@ function changePage() {
   gotoPage(page.url);
 }
 
+//Fetches Data of pages
 function fetchPagesData() {
   fetch('/assets/pages.json')
     .then((r) => r.json())
@@ -90,12 +98,14 @@ const debouncedUpdateCaret = raf.bind(null, updateCaret);
 
 const handleClick = debouncedUpdateCaret;
 
+//Motion Blur from text movement
 function handleBlur() {
   if (textNav.textContent === '') {
     textNav.textContent = textNav.getAttribute('data-original-text');
   }
 }
 
+//Focuses text after text movement
 function handleFocus() {
   debouncedUpdateCaret();
 
@@ -104,6 +114,7 @@ function handleFocus() {
   }
 }
 
+//if press key, send hotkey
 function handleKeydown(e) {
   if (e.key === 'Enter') {
     e.preventDefault();
@@ -117,6 +128,7 @@ function handleKeydown(e) {
   debouncedUpdateCaret();
 }
 
+//finds elemnet and binds it
 export function seekAndBindElement() {
   textNav = document.querySelector('.js-text-nav');
 

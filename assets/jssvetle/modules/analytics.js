@@ -1,3 +1,4 @@
+//Panelbear Analytics
 export function sendEvent({ type, label, value }) {
   if (!window.panelbear) return;
 

@@ -1,3 +1,4 @@
+//exported everything important
 export const raf = window.requestAnimationFrame;
 export const idle = window.requestIdleCallback;
 export const timeout = window.setTimeout;

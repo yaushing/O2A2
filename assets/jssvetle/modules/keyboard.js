@@ -1,5 +1,7 @@
+//imports get
 import { get } from 'svelte/store';
 
+//imports required commands for keyboard shortcuts
 import {
   currentChannel,
   toggleSpace,
@@ -11,6 +13,7 @@ import {
 } from './tv.js';
 import { body } from './utils.js';
 
+//If the key is a HotKey
 function isValidHotkey(e) {
   const activeEl = document.activeElement;
 
@@ -23,14 +26,27 @@ function isValidHotkey(e) {
   );
 }
 
+/*
+If press 'k' Toggle on/off space
+If press '+' or '=' the channel increases
+If press '-' reduces channel number
+If press 'h' Toggle on/off content
+If press 'f' Toggle on/off Fullscreen
+*/
 function handleHotkey(e) {
   if (!isValidHotkey(e)) return;
-  if (e.key === 'r') return toggleSpace();
+  if (e.key === 'k') return toggleSpace();
   if (e.key === '+' || e.key === '=') return incrementChannel();
   if (e.key === '-') return decrementChannel();
   if (e.key === 'h') return toggleContent();
   if (e.key === 'f') return toggleFullscreen();
-
+  /*
+  Pressing 
+  '1' switches to channel 1, 
+  '2' switches to channel 2, 
+  ...
+  'n' switches to channel n
+  */
   const channelNumber = Number(e.key);
 
   // ignore non-number keys

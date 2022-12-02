@@ -540,7 +540,6 @@ a[href^='#']::after {
   flex-wrap: wrap;
   height: 35vh;
   padding-bottom: 0.3em;
-  border-bottom: 1px solid #eaecef;
   align-items: center;
 }
 

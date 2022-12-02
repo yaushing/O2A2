@@ -1,3 +1,4 @@
+//Static Noise
 function noise() {
   if (!window.AudioContext) return;
 
@@ -42,14 +43,16 @@ function noise() {
     }
   }
 }
-
+//NoiseStuff will be null
 let noiseInstance = null;
 
+//Starts Static Noise
 export function startNoise() {
   if (noiseInstance != null) return;
   noiseInstance = noise();
 }
 
+//Ends Static Noise
 export function stopNoise() {
   if (noiseInstance) {
     noiseInstance.stop();

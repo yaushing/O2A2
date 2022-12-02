@@ -1,8 +1,10 @@
+//imports important stuff
 import { writable, derived, get } from 'svelte/store';
 
 import { sendEvent } from './analytics.js';
 import { raf, body } from './utils.js';
 
+// exports the loading states of the page
 export const LOADING_STATE = {
   None: 0,
   Loading: 1,
@@ -12,6 +14,7 @@ export const LOADING_STATE = {
 // used for toggling
 let prevVolume = null;
 
+//exports the variables for loading states
 export const tvEl = document.querySelector('.js-tv');
 export const screenEl = tvEl.querySelector('.js-screen');
 export const contentEl = screenEl.querySelector('.js-content');
@@ -22,6 +25,7 @@ export const currentChannel = writable(0);
 export const loadingChannel = writable(LOADING_STATE.None);
 export const loadingPage = writable(LOADING_STATE.None);
 
+//Map of the Channels
 export const channelMap = {
   0: {},
   1: { type: 'video', duration: null, startTimestamp: null },
@@ -35,8 +39,10 @@ export const channelMap = {
   9: { type: 'video', duration: null, startTimestamp: null },
 };
 
+//Map of ChannelID(1, 2, 3, 4, 5, 6, 7, 8, 9)
 const channelIds = Object.keys(channelMap);
 
+//exports the data of current channel (ChannelID, duration + start TImestamp)
 export const currentChannelInfo = derived(
   [currentChannel],
   ([$currentChannel]) => {
@@ -49,6 +55,7 @@ export const currentChannelInfo = derived(
   },
 );
 
+//Updates the channel information (1-2, 3-4, 1-9)
 export const updateChannelInfo = (number, info) => {
   channelMap[number] = {
     ...channelMap[number],
@@ -56,6 +63,7 @@ export const updateChannelInfo = (number, info) => {
   };
 };
 
+//Increases channel number (1-2, 2-3, 3-4, 4-5, 5-6)
 export const incrementChannel = () => {
   currentChannel.update((n) => {
     const newValue = n + 1;
@@ -68,10 +76,12 @@ export const incrementChannel = () => {
   });
 };
 
+//Skips Channels (1-3, 2-4, 1-9, 5-8)
 export const gotoChannel = (n) => {
   currentChannel.set(n);
 };
 
+//decreases Channels (9-8, 8-7, 7-6, 6-5)
 export const decrementChannel = () => {
   currentChannel.update((n) => {
     const newValue = n - 1;
@@ -84,9 +94,11 @@ export const decrementChannel = () => {
   });
 };
 
+//Sets Maximun Volume and Each volume step from remote
 const MAX_VOLUME = 15;
 const VOLUME_STEP = 1 / MAX_VOLUME;
 
+//Decreases volume(15-14, 14-13, 13-12, 12-11, 11-10)
 export function decrementVolume() {
   const newVol = get(volume) - VOLUME_STEP;
 
@@ -95,6 +107,7 @@ export function decrementVolume() {
   volume.set(newVol);
 }
 
+//Increases volume(10-11, 11-12, 12-13, 13-14, 14-15)
 export function incrementVolume() {
   const newVol = get(volume) + VOLUME_STEP;
 
@@ -103,6 +116,7 @@ export function incrementVolume() {
   volume.set(newVol);
 }
 
+//Mutes/Unmute. (n-0, 0-n)
 export function toggleMute() {
   const $volume = get(volume);
 
@@ -114,10 +128,12 @@ export function toggleMute() {
   }
 }
 
+//toggles content being shown
 export const toggleContent = () => {
   contentVisible.update((v) => !v);
 };
 
+//toggles spacemode
 export function toggleSpace() {
   tvEl.addEventListener(
     'animationend',
@@ -150,6 +166,7 @@ export function toggleSpace() {
   });
 }
 
+//Load the timestamps of channels
 function loadChannelTimestamps() {
   const tsList = JSON.parse(localStorage.getItem('timestamps'));
 
@@ -160,6 +177,7 @@ function loadChannelTimestamps() {
   });
 }
 
+//saves the timestamps of channel
 function saveChannelTimestamps() {
   localStorage.setItem(
     'timestamps',
@@ -171,6 +189,7 @@ function saveChannelTimestamps() {
   );
 }
 
+//toggles fullscreen
 export function toggleFullscreen() {
   if (!document.fullscreenElement) {
     document.documentElement.requestFullscreen();
@@ -179,6 +198,7 @@ export function toggleFullscreen() {
   }
 }
 
+//Looks for the channel buttons
 function lookForChannelButtons() {
   const channelButtons = document.querySelectorAll('.js-channel-trigger');
 
@@ -204,6 +224,7 @@ function lookForChannelButtons() {
   });
 }
 
+//Listens for any event
 window.addEventListener(
   'visibilitychange',
   () => {

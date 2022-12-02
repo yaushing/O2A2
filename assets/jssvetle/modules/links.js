@@ -1,12 +1,18 @@
+//imports animations for content from utils.js
 import { body, hostname, waitFor, raf, location } from './utils';
+//imports content loading animations from tv.js
 import { contentEl, loadingPage, LOADING_STATE } from './tv.js';
 
+//Minimun loading time: 300ms
 const MIN_LOADING_TIME = 300;
 
+// Initializes Slot List
 const contentSlotList = Array.from(contentEl.querySelectorAll('[js-slot]'));
 
+//Sets page Cache as a Map
 const pageCache = new Map();
 
+//Sets initial state of page as statoc
 const initialState = {
   title: document.title,
   slots: getSlotsContent(),
@@ -15,12 +21,14 @@ const initialState = {
 let parser;
 let currentPathname = location.pathname;
 
+//sets achors to link back to .../02A2/#/_____
 function isHashAnchor(element) {
   return (
     element.tagName === 'A' && element.getAttribute('href').indexOf('#') === 0
   );
 }
 
+//Checks if anchor can be transitioned
 function isTransitionableAnchor(element) {
   return (
     element.tagName === 'A' &&
@@ -31,6 +39,7 @@ function isTransitionableAnchor(element) {
   );
 }
 
+//Checks content of slots
 function getSlotsContent(container = contentEl) {
   let slotList = contentSlotList;
 
@@ -49,6 +58,7 @@ function getSlotsContent(container = contentEl) {
   return slots;
 }
 
+//Replaces content of the slots 
 function replaceSlotsContent({ slots }) {
   Object.entries(slots).forEach(([slotName, slotHTML]) => {
     const slotEl = contentSlotList.find(
@@ -63,6 +73,7 @@ function replaceSlotsContent({ slots }) {
   window.dispatchEvent(new CustomEvent('contentChange'));
 }
 
+//fetches URL of page
 function fetchPage(url, { importance } = {}) {
   url = url.replace(/\/$/, '');
 
@@ -95,6 +106,7 @@ function fetchPage(url, { importance } = {}) {
   return promise;
 }
 
+//Function to gotonewpage - run anims
 export async function gotoPage(url) {
   if (url.indexOf('#') === 0) return;
   if (url.indexOf('http') !== 0) {
@@ -122,6 +134,7 @@ export async function gotoPage(url) {
   });
 }
 
+//Makes sure that header + content body scrolls seperately
 function updateContentScrollPosition() {
   raf(() => {
     const target = contentEl.querySelector(':target');
@@ -134,6 +147,7 @@ function updateContentScrollPosition() {
   });
 }
 
+//Starts initLinks
 export function initLinks() {
   window.addEventListener('popstate', async (e) => {
     let { state } = e;

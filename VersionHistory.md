@@ -18,3 +18,7 @@
 
 **Version 0.8.700 (Beta Stage 3)**
 *Added channel 9 and 3 videos, Fixed remote styling, fixed me.jpg span inverted colours. Added Violin and Piano Skills in resume. Skills are now rearranged to strongest to weakest. Rephrased index.html. Added Instagram.*
+
+**Version 0.9.100 (Gamma 1)**
+*Code Cleanup. Reformatted Games.html for phone styling. Fixed resume Styling, deleted Webcam.svelte*
+*Code Cleanup: Added Pseudocode in main.js, utils.js, tv.js, textNav.js, noise.js, links.js, keyboard.js, analytics.js.*

@@ -1,3 +1,23 @@
+/*This is a compilation of the following Scripts to make it easier to place in each page.
+1. HeaderControls.svelte
+2. Remote.svelte
+3. RemoteTrigger.svelte
+4. Screen.svelte
+5. SpaceTrigger.svelte
+6. Video.svelte
+7. Volume.svelte
+8. analytics.js
+9. keyboard.js
+10. links.js
+11. noise.js
+12. textNav.js
+13. tv.js
+14. utils.js
+
+**REFER TO INDIVIDUAL SCRIPTS FOR PSEUDOCODE**
+*/
+
+
 function t() {}
 function e(t) {
   return t();
