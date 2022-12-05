@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <meta name="description" content="Coding for humans. Come say hi 🌳" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-site-verification" content="-AeO98ZKBiyBlJ-1-XKUIaKp1tCLlz6zydEQ-X7P1m8" />
+    <meta property="og:site_name" content="KYS | Home" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="article:author" content="https://yaushing.github.io/O2A2" />
+    <!-- from https://github.com/djpogo/avif-webp-css-support/ -->
+    <script>
+      ! function(A) {
+        "use strict";
+
+        function e(A, e, n) {
+          const o = function(A) {
+            return window.sessionStorage ? JSON.parse(window.sessionStorage.getItem(A + "Support")) : null
+          }(A);
+          if (null === o) {
+            const t = new Image;
+            return t.onload = t.onerror = function() {
+              n(A, 2 === t.height)
+            }, void(t.src = e)
+          }
+          t(A, o)
+        }
+
+        function t(e, t) {
+          t && A.documentElement.classList.add(e), window.sessionStorage.setItem(e + "Support", t)
+        }
+        e("webp", "data:image/webp;base64,UklGRi4AAABXRUJQVlA4TCEAAAAvAUAAEB8wAiMwAgSSNtse/cXjxyCCmrYNWPwmHRH9jwMA", t), e("avif", "data:image/avif;base64,AAAAIGZ0eXBhdmlmAAAAAGF2aWZtaWYxbWlhZk1BMUEAAADybWV0YQAAAAAAAAAoaGRscgAAAAAAAAAAcGljdAAAAAAAAAAAAAAAAGxpYmF2aWYAAAAADnBpdG0AAAAAAAEAAAAeaWxvYwAAAABEAAABAAEAAAABAAABGgAAAF0AAAAoaWluZgAAAAAAAQAAABppbmZlAgAAAAABAABhdjAxQ29sb3IAAAAAamlwcnAAAABLaXBjbwAAABRpc3BlAAAAAAAAAAIAAAACAAAAEHBpeGkAAAAAAwgICAAAAAxhdjFDgS0AAAAAABNjb2xybmNseAACAAIAAIAAAAAXaXBtYQAAAAAAAAABAAEEAQKDBAAAAGVtZGF0EgAKBzgAPtAgIAkyUBAAAPWc41TP///4gHBX9H8XVK7gGeDllq8TYARA+8Tfsv7L+zPE24eIoIzE0WhHbrqcrTK9VEgEG/hwgB5rdCbvP8g3KYPdV88CvPJnptgQ", t)
+      }(document);
+    </script>
+    <script async type="module" src="/assets/main.js"></script>
+    <link rel="preload" href="/assets/fonts/VCROSDMono.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="icon" href="/assets/images/favicon.png" />
+    <title>KYS | SpaceShooterGame</title>
+  </head>
+   <body class="cursor-default">
+    <div class="space">
+      <div class="stars"></div>
+      <div class="spaceship">
+        <div class="tv js-tv">
+          <div class="tv-screen js-screen">
+            <div class="tv-effects">
+              <div class="tv-effect --decontrast"></div>
+              <div class="tv-effect --static"></div>
+              <div class="tv-effect --artifacts"></div>
+              <div class="tv-effect --vignette"></div>
+              <div class="tv-effect --crt"></div>
+            </div>
+            <div class="tv-content js-content">
+              <a class="skip-link" href="#content">Skip to content</a>
+              <div class="page-container glitchy-text">
+                <header class="header">
+                  <div class="header__container">
+                    <nav class="nav" js-slot="nav">
+                      <ul class="nav__breadcrumb">
+                        <li>
+                          <a href="javascript:window.open('','_self').close();">YSK</a>
+                        </li>
+                        
+                        <li>
+                          <a href="javascript:window.open('','_self').close();">games</a>
+                          </li>
+                        <li class="js-text-nav text-nav cursor-pointer" contenteditable role="textbox" aria-label="navigation by text" data-original-text="games">Space Shooter</li>
+                      </ul>
+                    </nav>
+                    <div class="header__info">
+                      <div class="js-header-date">JUL 2, 1993</div>
+                      <div class="js-header-controls"></div>
+                      <noscript>
+                        <div role="button">CHANNEL 00</div>
+                      </noscript>
+                    </div>
+                  </div>
+                </header>
+                <div class="page-content" id="content" js-slot="content">
+                  <br><br><br><br>
+    <div id="unity-container" class="unity-desktop" style="margin-top:20vh;">
+      <canvas id="unity-canvas"></canvas>
+      <div id="unity-loading-bar">
+        <div id="unity-logo"></div>
+        <div id="unity-progress-bar-empty">
+          <div id="unity-progress-bar-full"></div>
+        </div>
+      </div>
+      <div id="unity-warning"> </div>
+      <div id="unity-footer">
+        <div id="unity-webgl-logo"></div>
+        <div id="unity-fullscreen-button"></div>
+        <div id="unity-build-title">Space Shooter</div>
+      </div>
+    </div>
+    </div>
+    <script>
+      var container = document.querySelector("#unity-container");
+      var canvas = document.querySelector("#unity-canvas");
+      var loadingBar = document.querySelector("#unity-loading-bar");
+      var progressBarFull = document.querySelector("#unity-progress-bar-full");
+      var fullscreenButton = document.querySelector("#unity-fullscreen-button");
+      var warningBanner = document.querySelector("#unity-warning");
+
+      // Shows a temporary message banner/ribbon for a few seconds, or
+      // a permanent error message on top of the canvas if type=='error'.
+      // If type=='warning', a yellow highlight color is used.
+      // Modify or remove this function to customize the visually presented
+      // way that non-critical warnings and error messages are presented to the
+      // user.
+      function unityShowBanner(msg, type) {
+        function updateBannerVisibility() {
+          warningBanner.style.display = warningBanner.children.length ? 'block' : 'none';
+        }
+        var div = document.createElement('div');
+        div.innerHTML = msg;
+        warningBanner.appendChild(div);
+        if (type == 'error') div.style = 'background: red; padding: 10px;';
+        else {
+          if (type == 'warning') div.style = 'background: yellow; padding: 10px;';
+          setTimeout(function() {
+            warningBanner.removeChild(div);
+            updateBannerVisibility();
+          }, 5000);
+        }
+        updateBannerVisibility();
+      }
+
+      var buildUrl = "Build";
+      var loaderUrl = buildUrl + "/WEB2.loader.js";
+      var config = {
+        dataUrl: buildUrl + "/WEB2.data.unityweb",
+        frameworkUrl: buildUrl + "/WEB2.framework.js.unityweb",
+        codeUrl: buildUrl + "/WEB2.wasm.unityweb",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "Quick and Simple Games",
+        productName: "Space Shooter",
+        productVersion: "0.1",
+        showBanner: unityShowBanner,
+      };
+
+      // By default Unity keeps WebGL canvas render target size matched with
+      // the DOM size of the canvas element (scaled by window.devicePixelRatio)
+      // Set this to false if you want to decouple this synchronization from
+      // happening inside the engine, and you would instead like to size up
+      // the canvas DOM size and WebGL render target sizes yourself.
+      // config.matchWebGLToCanvasSize = false;
+
+      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+        // Mobile device style: fill the whole browser client area with the game canvas:
+
+        var meta = document.createElement('meta');
+        meta.name = 'viewport';
+        meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+        document.getElementsByTagName('head')[0].appendChild(meta);
+        container.className = "unity-mobile";
+        canvas.className = "unity-mobile";
+
+        // To lower canvas resolution on mobile devices to gain some
+        // performance, uncomment the following line:
+        // config.devicePixelRatio = 1;
+
+        unityShowBanner('WebGL builds are not supported on mobile devices.');
+      } else {
+        // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
+
+        canvas.style.width = "80vw";
+        canvas.style.height = "80vh";
+      }
+
+      loadingBar.style.display = "block";
+
+      var script = document.createElement("script");
+      script.src = loaderUrl;
+      script.onload = () => {
+        createUnityInstance(canvas, config, (progress) => {
+          progressBarFull.style.width = 100 * progress + "%";
+        }).then((unityInstance) => {
+          loadingBar.style.display = "none";
+          fullscreenButton.onclick = () => {
+            unityInstance.SetFullscreen(1);
+          };
+        }).catch((message) => {
+          alert(message);
+        });
+      };
+      document.body.appendChild(script);
+    </script>
+    <script>
+      document.querySelector(".js-header-date").innerHTML = new Intl.DateTimeFormat("en-US", {
+        month: "short",
+        day: "numeric",
+        year: "numeric"
+      }).format(new Date);
+    </script>
+    <script async type="module" src="/assets/main.js"></script>
+    <!-- Panelbear -->
+    <script async src="https://cdn.panelbear.com/analytics.js?site=4Tucg4KASiw"></script>
+    <script>
+      window.panelbear = window.panelbear || function() {
+        (window.panelbear.q = window.panelbear.q || []).push(arguments);
+      };
+      panelbear('config', {
+        site: '4Tucg4KASiw'
+      });
+    </script>
+  </body>
+</html>
