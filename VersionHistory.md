@@ -22,3 +22,6 @@
 **Version 0.9.100 (Gamma 1)**
 *Code Cleanup. Reformatted Games.html for phone styling. Fixed resume Styling, deleted Webcam.svelte. Added Space Shooter*
 *Code Cleanup: Added Pseudocode in main.js, utils.js, tv.js, textNav.js, noise.js, links.js, keyboard.js, analytics.js.*
+
+**Version 0.9.101 (Gamma 1)**
+*Quick grammar check + added Space Shooter to Past Projects*
