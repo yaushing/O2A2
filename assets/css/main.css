@@ -235,7 +235,7 @@
         background-image:url(/assets/images/rainbow-static.gif)
     }
     html.webp .button-text,html.webp a{
-        background-image:url(/assets/images/rainbow-static.webp)
+        background-image:url(assets/images/rainbow-static.webp)
     }
     .button-text:hover,a:hover{
         cursor:url(/assets/images/cursor-pointer.png) 14 8,auto;
@@ -287,7 +287,7 @@
         background-size:cover
     }
     .bio__photo:focus:after,.bio__photo:hover:after{
-        background-image:url(/assets/images/me.jpg);
+        background-image:url(assets/images/me.jpg);
         transition:visibility 0s .2s;
         visibility:visible
         
@@ -314,11 +314,11 @@
     }
     .playlist-img:before{
         content:"";
-        background-image:url(/assets/images/effect-static.gif);
+        background-image:url(assets/images/effect-static.gif);
         transition:opacity .4s
     }
     html.webp .playlist-img:before{
-        background-image:url(/assets/images/effect-static.webp)
+        background-image:url(assets/images/effect-static.webp)
     }
     .playlist-link:focus+.playlist-img,.playlist-link:hover+.playlist-img{
         visibility:visible;
@@ -372,21 +372,21 @@
     .tv-effect.--static{
         background-size:cover;
         opacity:.1;
-        background-image:url(/assets/images/effect-static.gif)
+        background-image:url(assets/images/effect-static.gif)
     }
     body:not([channel]) .tv-effect.--static,body[channel="0"] .tv-effect.--static{
         opacity:.2
     }
     html.webp .tv-effect.--static{
-        background-image:url(/assets/images/effect-static.webp)
+        background-image:url(assets/images/effect-static.webp)
     }
     .tv-effect.--artifacts{
-        background-image:url(/assets/images/effect-artifacts.gif);
+        background-image:url(assets/images/effect-artifacts.gif);
         background-size:cover;
         opacity:.4
     }
     html.webp .tv-effect.--artifacts{
-        background-image:url(/assets/images/effect-artifacts.webp)
+        background-image:url(assets/images/effect-artifacts.webp)
     }
     .tv-effect.--vignette{
         background:radial-gradient(circle,transparent 60%,#000 100%),transparent
@@ -448,13 +448,13 @@
     }
     body[space] .stars{
         animation:moving-stars 117s linear infinite;
-        background-image:url(/assets/images/stars.jpg)
+        background-image:url(assets/images/stars.jpg)
     }
     html.webp body[space] .stars{
-        background-image:url(/assets/images/stars.webp)
+        background-image:url(assets/images/stars.webp)
     }
     html.avif body[space] .stars{
-        background-image:url(/assets/images/stars.avif)
+        background-image:url(assets/images/stars.avif)
     }
     body[space=floating] .spaceship{
         animation:float 6s ease-in-out infinite
@@ -616,10 +616,10 @@
         }
     }
     .cursor-default{
-        cursor:url(/assets/images/cursor-default.png) 0 0,auto
+        cursor:url(assets/images/cursor-default.png) 0 0,auto
     }
     .cursoxr-pointer{
-        cursor:url(/assets/images/cursor-pointer.png) 14 8,auto
+        cursor:url(assets/images/cursor-pointer.png) 14 8,auto
     }
     .skip-link{
         position:absolute;
@@ -711,7 +711,7 @@
         display:none
     }
     body[space] .perspective.svelte-1vrpccc.svelte-1vrpccc{
-        --plastic-texture-img:url(/assets/images/plastic-texture-noise.png)
+        --plastic-texture-img:url(assets/images/plastic-texture-noise.png)
     }
     @media(max-height:800px){
         .perspective.svelte-1vrpccc.svelte-1vrpccc{
@@ -794,7 +794,7 @@
         color:transparent
     }
     button.svelte-1vrpccc.svelte-1vrpccc{
-        cursor:url(/assets/images/cursor-pointer.png) 14 8,auto;
+        cursor:url(assets/images/cursor-pointer.png) 14 8,auto;
         width:100%;
         height:25px;
         border:0 solid #222;
@@ -898,15 +898,15 @@
     }
     button.svelte-6brq6f:hover{
         opacity:1;
-        background-image:url(/assets/images/stars.jpg);
+        background-image:url(assets/images/stars.jpg);
         background-size:0 0;
         background-repeat:no-repeat
     }
     html.webp button.svelte-6brq6f:hover{
-        background-image:url(/assets/images/stars.webp)
+        background-image:url(assets/images/stars.webp)
     }
     html.avif button.svelte-6brq6f:hover{
-        background-image:url(/assets/images/stars.avif)
+        background-image:url(assets/images/stars.avif)
     }
     body.hide-content button.svelte-6brq6f{
         visibility:visible
