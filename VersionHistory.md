@@ -27,6 +27,10 @@
 *Quick grammar check + added Space Shooter to Past Projects*
 
 
+
 **Version 0.9.350 (Gamma 2)**
 *Updated Space Shooter to run on android, added APK download for Space Shooter(Still no Co-op/Pause). Added SpaceShooter documentation. Edited README.md as I am a Violinist. Resume latest projects now also have Space Shooter. Just put musician. Code Cleanup. Hopefully fixed css and js build corruption problem.*
 *Code Cleanup: Added Pseudocode in HeaderControls.svelte, Remote.svelte, RemoteTrigger.svelte, Screen.svelte, SpaceTrigger.svelte, Video.svelte, Volume.svelte*
+
+**Version 0.9.400 (Gamma 2)**
+*Quick font and JS fix I think*

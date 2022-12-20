@@ -691,10 +691,10 @@ function Ft(e) {
         (r = m("source")),
         (s = m("source")),
         r.src !==
-          (o = "/assets/videos/channel-" + e[4].displayName + ".webm") &&
+          (o = "assets/videos/channel-" + e[4].displayName + ".webm") &&
           y(r, "src", o),
         y(r, "type", "video/webm"),
-        s.src !== (l = "/assets/videos/channel-" + e[4].displayName + ".mp4") &&
+        s.src !== (l = "assets/videos/channel-" + e[4].displayName + ".mp4") &&
           y(s, "src", l),
         y(s, "type", "video/mp4"),
         y(n, "class", "tv-video"),
@@ -721,11 +721,11 @@ function Ft(e) {
     p(t, [e]) {
       16 & e &&
         r.src !==
-          (o = "/assets/videos/channel-" + t[4].displayName + ".webm") &&
+          (o = "assets/videos/channel-" + t[4].displayName + ".webm") &&
         y(r, "src", o),
         16 & e &&
           s.src !==
-            (l = "/assets/videos/channel-" + t[4].displayName + ".mp4") &&
+            (l = "assets/videos/channel-" + t[4].displayName + ".mp4") &&
           y(s, "src", l),
         16 & e && i !== (i = t[4].number) && y(n, "channel", i),
         32 & e && !isNaN(t[5]) && (n.volume = t[5]),
@@ -1119,7 +1119,7 @@ function Kt(e) {
         (K = v()),
         (Q = m("div")),
         (Q.innerHTML =
-          '<img loading="lazy" src="/assets/images/remotelogo.png" alt="filler" width="103" height="10" class="svelte-1vrpccc"/> \n          <br/> \n          <span>Space stuff</span>'),
+          '<img loading="lazy" src="assets/images/remotelogo.png" alt="filler" width="103" height="10" class="svelte-1vrpccc"/> \n          <br/> \n          <span>Space stuff</span>'),
         y(a, "class", "hide-text svelte-1vrpccc"),
         y(b, "class", "svelte-1vrpccc"),
         y(i, "class", "control onoff svelte-1vrpccc"),
@@ -1464,7 +1464,7 @@ function ye() {
   t.external ? window.open(t.url, "_blank") : ve(t.url);
 }
 function be() {
-  fetch("/assets/pages.json")
+  fetch("assets/pages.json")
     .then((t) => t.json())
     .then((t) => {
       ie = t;
