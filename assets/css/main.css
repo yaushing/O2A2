@@ -232,13 +232,13 @@
         background-repeat:no-repeat
     }
     html:not(.webp) .button-text,html:not(.webp) a{
-        background-image:url(/assets/images/rainbow-static.gif)
+        background-image:url(assets/images/rainbow-static.gif)
     }
     html.webp .button-text,html.webp a{
         background-image:url(assets/images/rainbow-static.webp)
     }
     .button-text:hover,a:hover{
-        cursor:url(/assets/images/cursor-pointer.png) 14 8,auto;
+        cursor:url(assets/images/cursor-pointer.png) 14 8,auto;
         background-size:100% 100%
     }
     .button-text:hover:after,a:hover:after{
