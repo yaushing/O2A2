@@ -40,3 +40,6 @@
 
 **Version 0.9.500 (Gamma 3)**
 *Fixed css and js in github pages, updated Space Shooter - back on track.*
+
+**Version 0.9.600 (Gamma 4)**
+*code cleanup- index text in code makes gramatical sense- capitalization*
