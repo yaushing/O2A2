@@ -37,3 +37,6 @@
 
 **Version 0.9.401 (Gamma 2)**
 *Quick font and JS fix I think*
+
+**Version 0.9.500 (Gamma 3)**
+*Fixed css and js in github pages, updated Space Shooter - back on track.*
