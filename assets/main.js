@@ -1,3 +1,4 @@
+/*works now*/
 /*This is a compilation of the following Scripts to make it easier to place in each page.
 1. HeaderControls.svelte
 2. Remote.svelte
