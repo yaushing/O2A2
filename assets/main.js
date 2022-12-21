@@ -691,9 +691,9 @@ function Ft(e) {
         (r = m("source")),
         (s = m("source")),
         r.src !==
-          (o = "../assets/videos/channel-" + e[4].displayName + ".webm") &&
+          (o = "../assets/videos/channel-" + e[4].displayName + ".mp4") &&
           y(r, "src", o),
-        y(r, "type", "video/webm"),
+        y(r, "type", "video/mp4"),
         s.src !== (l = "../assets/videos/channel-" + e[4].displayName + ".mp4") &&
           y(s, "src", l),
         y(s, "type", "video/mp4"),
@@ -721,7 +721,7 @@ function Ft(e) {
     p(t, [e]) {
       16 & e &&
         r.src !==
-          (o = "../assets/videos/channel-" + t[4].displayName + ".webm") &&
+          (o = "../assets/videos/channel-" + t[4].displayName + ".mp4") &&
         y(r, "src", o),
         16 & e &&
           s.src !==
