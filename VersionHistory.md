@@ -34,3 +34,6 @@
 
 **Version 0.9.400 (Gamma 2)**
 *Quick font and JS fix I think*
+
+**Version 0.9.401 (Gamma 2)**
+*Quick font and JS fix I think*
