@@ -61,3 +61,6 @@
 *End "Todo.md"*
 *Redone Index text and also changed channels to .webm to hopefully increase loading speed.*
 *Fixed SpaceShooter Page css*
+
+**Version 1.0.100 (Game Update)**
+*Change past projects github website link to github.com/yaushing/yaushing from yaushing/O2A2. Try to override anchor design in games page. [Small anchor (Documentation and .apk anchors ... Maybe the other Games too))] Title the Game Names - make the Game Names light coloured - like an anchor*
