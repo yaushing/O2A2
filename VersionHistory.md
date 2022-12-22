@@ -42,4 +42,22 @@
 *Fixed css and js in github pages, updated Space Shooter - back on track.*
 
 **Version 0.9.600 (Gamma 4)**
-*code cleanup- index text in code makes gramatical sense- capitalization*
+*code cleanup- index text in code makes gramatical sense- capitalization, Deleted unnecessary files*
+
+**Version 1.0.000 (Release)**
+*-- Finished Overhaul --*
+*From - "Todo.md"*
+1. Channel Overhaul
+        1. refer to 9
+        2. Meme
+        3. refer to 9
+        4. Swap: smt abt SG's Hist, 
+        5. Keep
+        6. refer to 9
+        7. Keep
+        8. Meme
+        9. Keep - Split for 9, 6, 3, 1 - 2m each (+/- 2)
+2. Add a commented Singapore - linked to CHNL 
+*End "Todo.md"*
+*Redone Index text and also changed channels to .webm to hopefully increase loading speed.*
+*Fixed SpaceShooter Page css*
