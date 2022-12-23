@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script async type="module" src="assets/main.js"></script>
     <meta charset="utf-8" />
     <meta name="description" content="Coding for humans. Come say hi 🌳" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -89,7 +90,7 @@
                         </video>
                       </li>
                       <li>
-                        <a href="javascript:testforphone();"><h1>Space Shooter</h1></a>
+                        <a href="javascript:if(navigator.maxTouchPoints < 1){window.open('SpaceShooter/index.html', '_self')}"><h1>Space Shooter</h1></a>
                         <small>Unity game on WebGL. Doesn't work on android or iOS. From GameDevHQ unity tutorials. Download the .apk <a href="assets/apks/SpaceShooter/SpaceShooter.apk" style="font-size:inherit; font-size:inherit; text-transform:None" download>here</a>. Documentation <a href="assets/apks/SpaceShooter/SpaceShooter.md" target="blank" style="font-size:inherit; font-size:inherit; text-transform:None">here</a>.
                         
                         </li>
@@ -124,18 +125,6 @@
         year: "numeric"
       }).format(new Date);
     </script>
-    <!-- WebGL on Phone --> 
-    <script>
-    let testforphone = () => {
-    if (navigator.maxTouchPoints > 1) {
-      alert("WebGL cannot Be run on phones, tablets, or laptops in touchscreen mode!");
-    }
-    else{
-      window.open('SpaceShooter/index.html','_blank');
-    }
-    }
-    </script>
-    <script async type="module" src="assets/main.js"></script>
     <!-- Panelbear -->
     <script async src="https://cdn.panelbear.com/analytics.js?site=4Tucg4KASiw"></script>
     <script>

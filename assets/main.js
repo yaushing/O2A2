@@ -566,49 +566,6 @@ class _t extends W {
     super(), V(this, t, Lt, jt, o, {});
   }
 }
-function Ot(e) {
-  let n, c, r, o, s, l, i, a;
-  return {
-    c() {
-      (n = m("div")),
-        (c = m("video")),
-        (r = v()),
-        (o = m("div")),
-        (s = m("div")),
-        (s.innerHTML = 'REC <span class="svelte-60jbj3"></span>'),
-        (l = v()),
-        (i = m("div")),
-        (a = h(e[2])),
-        y(c, "class", "tv-video svelte-60jbj3"),
-        y(c, "channel", "camera"),
-        (c.autoplay = !0),
-        y(s, "class", "rec svelte-60jbj3"),
-        y(i, "class", "counter"),
-        y(o, "class", "rec-wrapper big-text glitchy-text svelte-60jbj3"),
-        $(n, "visually-hidden", !e[0] || e[3] === ct);
-    },
-    m(t, f) {
-      d(t, n, f),
-        u(n, c),
-        e[5](c),
-        u(n, r),
-        u(n, o),
-        u(o, s),
-        u(o, l),
-        u(o, i),
-        u(i, a);
-    },
-    p(t, [e]) {
-      4 & e && b(a, t[2]),
-        9 & e && $(n, "visually-hidden", !t[0] || t[3] === ct);
-    },
-    i: t,
-    o: t,
-    d(t) {
-      t && f(n), e[5](null);
-    },
-  };
-}
 function Mt(t) {
   return t < 10 ? `0${t}` : t;
 }
@@ -1526,16 +1483,16 @@ function ke(t) {
     })(t)
   )
     return;
-  if ("k" === t.key) return At();
-  if ("+" === t.key || "=" === t.key) return yt();
-  if ("-" === t.key) return $t();
-  if ("h" === t.key) return Ct();
-  if ("f" === t.key)
+  if ("k" === t.key) {console.log("SpaceShortCut"); return At();}
+  if ("+" === t.key || "=" === t.key) { console.log("IncChShortCut"); return yt(); }
+  if ("-" === t.key) { console.log("DecChShortCut"); return $t(); }
+  if ("h" === t.key) { console.log("ShHidShortCut"); return Ct(); }
+  if ("f" === t.key){ console.log("FuScrShortCut");
     return void (document.fullscreenElement
       ? document.exitFullscreen && document.exitFullscreen()
-      : document.documentElement.requestFullscreen());
+      : document.documentElement.requestFullscreen());}
   const e = Number(t.key);
-  Number.isNaN(e) || (e === l(dt) ? bt(0) : bt(e));
+  Number.isNaN(e) || (e === l(dt) ? bt(0) : bt(e)); if(e < 3 && e > 0){console.warn("Channel low: " + e);} else if(e > 7){console.warn("Channel high: " + e);} else if(e == 0){console.error("Channel NULL")} else{console.log("Channel" + e)}
 }
 const Ne = () => {
   Q(() => {

@@ -1,1 +1,0 @@
-Add console.log statements for stuff like channel switches, and like for games.

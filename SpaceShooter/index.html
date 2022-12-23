@@ -63,11 +63,11 @@
                     <nav class="nav" js-slot="nav">
                       <ul class="nav__breadcrumb">
                         <li>
-                          <a href="javascript:window.open('','_self').close();">YSK</a>
+                          <a href="javascript:gohome();">YSK</a>
                         </li>
                         
                         <li>
-                          <a href="javascript:window.open('','_self').close();">games</a>
+                          <a href="javascript:gogame();">games</a>
                           </li>
                         <li class="js-text-nav text-nav cursor-pointer" contenteditable role="textbox" aria-label="navigation by text" data-original-text="games">Space Shooter</li>
                       </ul>
@@ -208,6 +208,17 @@
       panelbear('config', {
         site: '4Tucg4KASiw'
       });
+    </script>
+    <script>
+      let gohome = () => {
+        window.open('','_self').close(); 
+        window.open('../index.html', '_blank');
+      }
+
+      let gogame = () => {
+        window.open('','_self').close(); 
+        window.open('../games.html', '_blank');
+      }
     </script>
   </body>
 </html>

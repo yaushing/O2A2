@@ -70,3 +70,6 @@
 
 **Version 1.0.300 (Quality of Life update)**
 *An error pops up on andriod and iOS devices(phones and/or tablets) for WEBGL anchor when they try to access it. Improved photo sizing for photography.html on phones, SS.apk now has a download anchor tag*
+
+**Version 1.0.400 (Debug update)**
+*Error no longer occurs, WebGL anchor just doesn't do anything on iOS or andriod device (Phones/Tablets). No longer opens Spaceshooter index.html in a new tab, it closes itself before opening the spaceshooter page. the same happens from spaceshooter index to home / games. Also, using the shortcuts (+/=/-/k/f/h/1/2/3/4/5/6/7/8/9/0) shows up on dev console. Also deleted unnecessary Javascript*
