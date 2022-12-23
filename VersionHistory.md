@@ -67,3 +67,6 @@
 
 **Version 1.0.200 (TV update)**
 *Channel change buttons swapping pointer to reguler cursor. Added remote logo. Fixed remote logo. Project small anchors - swap design + changed me.jpg. Also, changed remote colours*
+
+**Version 1.0.300 (Quality of Life update)**
+*An error pops up on andriod and iOS devices(phones and/or tablets) for WEBGL anchor when they try to access it. Improved photo sizing for photography.html on phones, SS.apk now has a download anchor tag*

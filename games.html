@@ -89,8 +89,8 @@
                         </video>
                       </li>
                       <li>
-                        <a href="SpaceShooter/index.html" target="blank"><h1>Space Shooter</h1></a>
-                        <small>Unity game on WebGL. Doesn't work on android or iOS. From GameDevHQ unity tutorials. Download the .apk <a href="assets/apks/SpaceShooter/SpaceShooter.apk" style="font-size:inherit; font-size:inherit; text-transform:None">here</a>. Documentation <a href="assets/apks/SpaceShooter/SpaceShooter.md" target="blank" style="font-size:inherit; font-size:inherit; text-transform:None">here</a>.
+                        <a href="javascript:testforphone();"><h1>Space Shooter</h1></a>
+                        <small>Unity game on WebGL. Doesn't work on android or iOS. From GameDevHQ unity tutorials. Download the .apk <a href="assets/apks/SpaceShooter/SpaceShooter.apk" style="font-size:inherit; font-size:inherit; text-transform:None" download>here</a>. Documentation <a href="assets/apks/SpaceShooter/SpaceShooter.md" target="blank" style="font-size:inherit; font-size:inherit; text-transform:None">here</a>.
                         
                         </li>
                     </ul>
@@ -123,6 +123,17 @@
         day: "numeric",
         year: "numeric"
       }).format(new Date);
+    </script>
+    <!-- WebGL on Phone --> 
+    <script>
+    let testforphone = () => {
+    if (navigator.maxTouchPoints > 1) {
+      alert("WebGL cannot Be run on phones, tablets, or laptops in touchscreen mode!");
+    }
+    else{
+      window.open('SpaceShooter/index.html','_blank');
+    }
+    }
     </script>
     <script async type="module" src="assets/main.js"></script>
     <!-- Panelbear -->
