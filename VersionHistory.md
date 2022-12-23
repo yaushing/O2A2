@@ -26,8 +26,6 @@
 **Version 0.9.101 (Gamma 1)**
 *Quick grammar check + added Space Shooter to Past Projects*
 
-
-
 **Version 0.9.350 (Gamma 2)**
 *Updated Space Shooter to run on android, added APK download for Space Shooter(Still no Co-op/Pause). Added SpaceShooter documentation. Edited README.md as I am a Violinist. Resume latest projects now also have Space Shooter. Just put musician. Code Cleanup. Hopefully fixed css and js build corruption problem.*
 *Code Cleanup: Added Pseudocode in HeaderControls.svelte, Remote.svelte, RemoteTrigger.svelte, Screen.svelte, SpaceTrigger.svelte, Video.svelte, Volume.svelte*
@@ -73,3 +71,6 @@
 
 **Version 1.0.400 (Debug update)**
 *Error no longer occurs, WebGL anchor just doesn't do anything on iOS or andriod device (Phones/Tablets). No longer opens Spaceshooter index.html in a new tab, it closes itself before opening the spaceshooter page. the same happens from spaceshooter index to home / games. Also, using the shortcuts (+/=/-/k/f/h/1/2/3/4/5/6/7/8/9/0) shows up on dev console. Also deleted unnecessary Javascript*
+
+**Version 1.0.410**
+*Rewrote Index.html text*
