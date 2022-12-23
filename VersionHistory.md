@@ -64,3 +64,6 @@
 
 **Version 1.0.100 (Game Update)**
 *Change past projects github website link to github.com/yaushing/yaushing from yaushing/O2A2. Try to override anchor design in games page. [Small anchor (Documentation and .apk anchors ... Maybe the other Games too))] Title the Game Names - make the Game Names light coloured - like an anchor*
+
+**Version 1.0.200 (TV update)**
+*Channel change buttons swapping pointer to reguler cursor. Added remote logo. Fixed remote logo. Project small anchors - swap design + changed me.jpg. Also, changed remote colours*

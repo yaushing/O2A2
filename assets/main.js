@@ -967,7 +967,7 @@ function Vt(t, e, n) {
               a(ft, (c = ct), c), "unknown" == e.type && p();
             }),
             K({
-              type: "easter_egg",
+              type: "switch channel",
               label: "channel_switch",
               value: e.displayName,
             }))),
@@ -1120,7 +1120,7 @@ function Kt(e) {
         (K = v()),
         (Q = m("div")),
         (Q.innerHTML =
-          '<img loading="lazy" src="images/remotelogo.png" alt="filler" width="103" height="10" class="svelte-1vrpccc"/> \n          <br/> \n          <span>Space stuff</span>'),
+          '<img loading="lazy" src="assets/images/remotelogo.png" alt="filler" width="103" height="10" class="svelte-1vrpccc"/> \n          <br/> \n          <span>Space stuff</span>'),
         y(a, "class", "hide-text svelte-1vrpccc"),
         y(b, "class", "svelte-1vrpccc"),
         y(i, "class", "control onoff svelte-1vrpccc"),
