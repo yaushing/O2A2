@@ -74,3 +74,6 @@
 
 **Version 1.0.410**
 *Rewrote Index.html text*
+
+**Version 1.0.500 (Photo update)**
+*Added more photos + shortened index text by a bit.*
