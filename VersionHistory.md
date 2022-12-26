@@ -77,3 +77,6 @@
 
 **Version 1.0.500 (Photo update)**
 *Added more photos + shortened index text by a bit.*
+
+**Version 1.0.700 (Project update)**
+*add more repos: add documentation for every past project, made past projects more consistent: title to go to it, repo link in discription. Also added website documentation*
