@@ -82,3 +82,4 @@
 *add more repos: add documentation for every past project, made past projects more consistent: title to go to it, repo link in discription. Also added website documentation*
 
 **Version 1.0.800 (Resumé update)**
+*Fixed resume links*
