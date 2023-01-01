@@ -83,3 +83,6 @@
 
 **Version 1.0.800 (Resumé update)**
 *Fixed resume links*
+
+**Version 1.0.900 (Project update)**
+*Added Project BD-1*
