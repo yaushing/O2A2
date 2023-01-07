@@ -86,3 +86,6 @@
 
 **Version 1.0.900 (Project update)**
 *Added Project BD-1*
+
+**Version 2.0.000**
+*Locked, reamains here till specified updates.*
