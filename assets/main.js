@@ -18,7 +18,7 @@
 **REFER TO INDIVIDUAL SCRIPTS FOR PSEUDOCODE**
 */
 let showoef = true;
-
+loadeff()
 function t() {}
 function e(t) {
   return t();
