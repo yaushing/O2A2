@@ -153,8 +153,7 @@ export function toggleSpace() {
 
   raf(() => {
     const nextState =
-      body.getAttribute('space') === 'floating' ? 'exiting' : 'entering';
-
+      body.getAttribute('space') === 'floating' ? 'exiting' : 'entering'; 
     body.setAttribute('space', nextState);
 
     if (nextState === 'entering') {
