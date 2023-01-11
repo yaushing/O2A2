@@ -19,8 +19,7 @@
 */
 
 
-let showoef = false;
-
+let showoef = true;
 function t() {}
 function e(t) {
   return t();
@@ -1532,6 +1531,7 @@ const Ne = () => {
     Ae(),
       window.addEventListener("contentChange", Ae),
       window.addEventListener("keyup", ke),
+      window.addEventListener("load", loadeff)
       window.addEventListener("popstate", async (t) => {
         let { state: e } = t;
         if (Z.pathname === ue) return t.preventDefault(), void ge();
@@ -1868,3 +1868,4 @@ document.querySelector(".js-header-date").innerHTML = new Intl.DateTimeFormat(
     year: "numeric",
   }
 ).format(new Date());
+
