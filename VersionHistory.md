@@ -81,7 +81,7 @@
 **Version 1.0.700 (Project update)**
 *add more repos: add documentation for every past project, made past projects more consistent: title to go to it, repo link in discription. Also added website documentation*
 
-**Version 1.0.800 (Resumé update)**
+**Version 1.0.800 (Resume update)**
 *Fixed resume links*
 
 **Version 1.0.900 (Project update)**
@@ -89,3 +89,6 @@
 
 **Version 2.0.000**
 *Locked, reamains here till specified updates.*
+
+**Version 2.0.100**
+*Fixed overlay effects not loading, added weather API*
