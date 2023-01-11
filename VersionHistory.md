@@ -89,6 +89,3 @@
 
 **Version 2.0.000**
 *Locked, reamains here till specified updates.*
-
-**Version 2.0.100**
-*Fixed overlay effects not loading, added weather API*
