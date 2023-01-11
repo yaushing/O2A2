@@ -1531,7 +1531,7 @@ const Ne = () => {
     Ae(),
       window.addEventListener("contentChange", Ae),
       window.addEventListener("keyup", ke),
-      window.addEventListener("load", loadeff)
+      //window.addEventListener("load", loadeff)
       window.addEventListener("popstate", async (t) => {
         let { state: e } = t;
         if (Z.pathname === ue) return t.preventDefault(), void ge();
