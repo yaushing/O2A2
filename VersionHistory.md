@@ -89,3 +89,6 @@
 
 **Version 2.0.000**
 *Locked, reamains here till specified updates.*
+
+**Version 2.0.100**
+*Add show/hide particle effects in remote. and fixed effects crashing channels*
