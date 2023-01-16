@@ -1497,8 +1497,7 @@ function ke(t) {
     console.log("SpaceShortCut");
     return At();}
 }
-const Ne = () => {
-  Q(() => {
+
     Ae()
       window.addEventListener("keyup", ke),
       Y.addEventListener("mousemove", (t) => {
@@ -1516,8 +1515,7 @@ const Ne = () => {
       new Xt({ target: document.querySelector(".js-remote") }),
       new te({ target: document.querySelector(".js-header-controls") }),
       new ne({ target: document.querySelector(".js-space-trigger") });
-  });
-};
+
 "interactive" !== document.readyState
   ? window.addEventListener("DOMContentLoaded", Ne)
   : Ne();
