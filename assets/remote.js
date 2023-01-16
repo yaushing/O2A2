@@ -1167,6 +1167,7 @@ function Kt(e) {
             g(P, "click", $t),
             g(V, "click", e[2]),
             g(G, "click", Ct),
+            g(sheff, "click", loadeff),
           ]),
           (X = !0));
     },
@@ -1492,24 +1493,9 @@ function ke(t) {
     })(t)
   )
     return;
-  if ("+" === t.key || "=" === t.key) {
-    console.log("IncChShortCut");
-    return yt();
-  }
-  if ("-" === t.key) {
-    console.log("DecChShortCut");
-    return $t();
-  }
-  if ("h" === t.key) {
-    console.log("ShHidShortCut");
-    return Ct();
-  }
-  if ("f" === t.key) {
-    console.log("FuScrShortCut");
-    return void (document.fullscreenElement
-      ? document.exitFullscreen && document.exitFullscreen()
-      : document.documentElement.requestFullscreen());
-  }
+  if ("k" === t.key) {
+    console.log("SpaceShortCut");
+    return At();}
   const e = Number(t.key);
   Number.isNaN(e) || (e === l(dt) ? bt(0) : bt(e));
   if (e < 3 && e > 0) {
@@ -1524,21 +1510,8 @@ function ke(t) {
 }
 const Ne = () => {
   Q(() => {
-    Ae(),
-      window.addEventListener("contentChange", Ae),
+    Ae()
       window.addEventListener("keyup", ke),
-      window.addEventListener("popstate", async (t) => {
-        let { state: e } = t;
-        if (Z.pathname === ue) return t.preventDefault(), void ge();
-        (ue = Z.pathname),
-          null == e && (e = se),
-          pt.set(ct),
-          await et(300),
-          pt.set(rt),
-          Q(() => {
-            me(e), (document.title = e.title), ge();
-          });
-      }),
       Y.addEventListener("mousemove", (t) => {
         fe(t.target) &&
           (oe.has(t.target.href) || he(t.target.href, { importante: "low" }));

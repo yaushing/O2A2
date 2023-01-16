@@ -200,8 +200,7 @@
         padding-bottom:var(--gui-bottom)
     }
     .big-text{
-        font-size:clamp(24px,4.6vw,63px);
-        font-size:var(--font-size-secondary);
+        font-size:4vw;
         text-transform:uppercase
     }
     .button-text{
@@ -335,8 +334,7 @@
         gap:3.4rem
     }
     .project-list a{
-        font-size:clamp(24px,4.6vw,63px);
-        font-size:var(--font-size-secondary);
+        font-size:2vw;
         line-height:1;
         text-transform:uppercase
     }
@@ -344,8 +342,7 @@
         display:block;
         color:#a0a0a0;
         color:var(--text-primary);
-        font-size:clamp(16px,1.8vw,34px);
-        font-size:var(--font-size-primary)
+        font-size:2vw;
     }
     @media (min-width:580px){
         .project-list{
@@ -535,8 +532,6 @@
         --text-primary:#a0a0a0;
         --text-secondary:#fff;
         --font-primary:"VCR OSD Mono",monospace;
-        --font-size-primary:clamp(16px,1.8vw,34px);
-        --font-size-secondary:clamp(24px,4.6vw,63px);
         --line-height:1.4;
         --layer-top:55;
         --layer-me-hover:34;
@@ -574,8 +569,7 @@
         font-style:normal;
         color:#a0a0a0;
         color:var(--text-primary);
-        font-size:clamp(16px,1.8vw,34px);
-        font-size:var(--font-size-primary);
+        font-size:2vw;
         line-height:1.4;
         line-height:var(--line-height)
     }
@@ -646,7 +640,6 @@
         z-index:calc(var(--layer-tv-effects) + 1);
         left:var(--gui-side);
         bottom:var(--gui-bottom);
-        font-size:var(--font-size-secondary);
         filter:blur(1px)
     }
     .track.svelte-1cukcpa{
