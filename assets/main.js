@@ -1167,6 +1167,7 @@ function Kt(e) {
             g(P, "click", $t),
             g(V, "click", e[2]),
             g(G, "click", Ct),
+            g(sheff, "click", loadeff),
           ]),
           (X = !0));
     },

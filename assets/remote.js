@@ -1496,17 +1496,6 @@ function ke(t) {
   if ("k" === t.key) {
     console.log("SpaceShortCut");
     return At();}
-  const e = Number(t.key);
-  Number.isNaN(e) || (e === l(dt) ? bt(0) : bt(e));
-  if (e < 3 && e > 0) {
-    console.warn("Channel low: " + e);
-  } else if (e > 7) {
-    console.warn("Channel high: " + e);
-  } else if (e == 0) {
-    console.error("Channel NULL");
-  } else {
-    console.log("Channel" + e);
-  }
 }
 const Ne = () => {
   Q(() => {
@@ -1532,13 +1521,4 @@ const Ne = () => {
 "interactive" !== document.readyState
   ? window.addEventListener("DOMContentLoaded", Ne)
   : Ne();
-
-document.querySelector(".js-header-date").innerHTML = new Intl.DateTimeFormat(
-  "en-US",
-  {
-    month: "short",
-    day: "numeric",
-    year: "numeric",
-  }
-).format(new Date());
 
