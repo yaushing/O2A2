@@ -1493,6 +1493,9 @@ function ke(t) {
     })(t)
   )
     return;
+    if ("k" === t.key) {
+      console.log("SpaceShortCut");
+      return At();}
   if ("+" === t.key || "=" === t.key) {
     console.log("IncChShortCut");
     return yt();
