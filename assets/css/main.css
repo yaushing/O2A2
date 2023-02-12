@@ -147,7 +147,8 @@ img{
 .nav__breadcrumb{
     display:flex;
     align-items:center;
-    min-height:28px
+    min-height:28px;
+    font-size: 2vw;
 }
 .nav__breadcrumb li:not(:last-child):after{
     content:" /";
@@ -915,4 +916,8 @@ html.avif button.svelte-6brq6f:hover{
 }
 body.hide-content button.svelte-6brq6f{
     visibility:visible
+}
+
+.copyrightdiv{
+    font-size: 1vw;
 }
