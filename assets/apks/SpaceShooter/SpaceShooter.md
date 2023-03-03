@@ -1,7 +1,7 @@
 **Space Shooter Documentation**
 
 Current Web version: 1.1
-Current apk Version: 1.0
+Current apk Version: 1.1
 
 Version 0.9
  - Key features
