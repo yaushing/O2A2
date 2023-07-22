@@ -92,3 +92,9 @@
 
 **Version 2.0.100**
 *Add show/hide particle effects in remote. and fixed effects crashing channels*
+
+**Version 2.0.221**
+*Update of random facts, volleyball update.*
+
+**Version 2.0.221**
+*Styling updates for dynamic*

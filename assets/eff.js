@@ -211,7 +211,7 @@ function loadeff() {
       }
     }
   
-    if (month == "2" || (month == "3" && showoef == true)) {
+    if (month == "2" || (month == "3" || (month == "6" || (month == "7" && showoef == true)))) {
       // Create the CSS styles
       const css = document.createTextNode(`
           #lens-flare {

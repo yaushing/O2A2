@@ -148,7 +148,6 @@ img{
     display:flex;
     align-items:center;
     min-height:28px;
-    font-size: 2vw;
 }
 .nav__breadcrumb li:not(:last-child):after{
     content:" /";
@@ -200,9 +199,17 @@ img{
     padding-bottom:2.94117647059rem;
     padding-bottom:var(--gui-bottom)
 }
-.big-text{
-    font-size:4vw;
-    text-transform:uppercase
+@media only screen and (min-width: 450px) {
+    .big-text{
+        font-size:4vw;
+        text-transform:uppercase
+    }
+}
+@media only screen and (max-width: 450px) {
+    .big-text{
+        font-size:10vw;
+        text-transform:uppercase
+    }
 }
 .button-text{
     font-family:inherit;
@@ -335,7 +342,6 @@ html.webp .playlist-img:before{
     gap:3.4rem
 }
 .project-list a{
-    font-size:2vw;
     line-height:1;
     text-transform:uppercase
 }
@@ -343,7 +349,6 @@ html.webp .playlist-img:before{
     display:block;
     color:#a0a0a0;
     color:var(--text-primary);
-    font-size:2vw;
 }
 @media (min-width:580px){
     .project-list{
@@ -563,16 +568,32 @@ body.loading-page .tv-content{
     background-color:#fff;
     color:#000
 }
-html{
-    font-family:VCR OSD Mono,monospace;
-    font-family:var(--font-primary);
-    font-weight:400;
-    font-style:normal;
-    color:#a0a0a0;
-    color:var(--text-primary);
-    font-size:2vw;
-    line-height:1.4;
-    line-height:var(--line-height)
+
+@media only screen and (min-width: 430px) {
+    html{
+        font-family:VCR OSD Mono,monospace;
+        font-family:var(--font-primary);
+        font-weight:400;
+        font-style:normal;
+        color:#a0a0a0;
+        color:var(--text-primary);
+        font-size:2vw;
+        line-height:1.4;
+        line-height:var(--line-height)
+    }
+}
+@media only screen and (max-width: 430px) {
+    html{
+        font-family:VCR OSD Mono,monospace;
+        font-family:var(--font-primary);
+        font-weight:400;
+        font-style:normal;
+        color:#a0a0a0;
+        color:var(--text-primary);
+        font-size:5vw;
+        line-height:1.4;
+        line-height:var(--line-height)
+    }
 }
 body{
     background-color:#000;
