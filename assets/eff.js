@@ -16,7 +16,7 @@ function loadeff() {
       new Date()
     );
   
-    if (month == "12" && showoef == true) {
+    if (month == "7" && showoef == true) {
       var embedimSnow = document.getElementById("embedim--snow");
       if (!embedimSnow) {
         function embRand(a, b) {
